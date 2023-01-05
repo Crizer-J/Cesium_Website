@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/stylesheet.css" rel="stylesheet">
+    <title>Cesium Portal</title>
+
+    <!--Cesium Info-->
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.100/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.100/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="menu">
+        
+        <div class="work-please">
+            <div class="credit-to-josh">
+                <h3>Josh Rocks</h3>
+            </div>
+
+            <div>
+                <ul class="menu-items">
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="logo-img">
+            <img src="./img/signature.png">
+        </div>
+    </div>    
+
+    <div class="main-area">
+        <div class="left-side-menu">
+
+            <h2 class="left-side-menu-title">layers</h2>
+
+            <ul class="layer-list">
+                <li>
+                    <h3>layer 1</h3>
+                </li>
+                <li>
+                    <h3>layer 2</h3>  
+                </li>
+                <li>
+                    <h3>layer 3</h3>
+                </li>
+                <li>
+                    <h3>layer 4</h3>
+                </li>
+                <li>
+                    <h3>layer 5</h3>
+                </li>
+            </ul>
+
+            <div class="check-boxes">
+                
+            </div>
+        </div>
+    
+
+
+        <div class="main-viewport">
+            <div class="main-viewport-menu-container">
+                
+                <h3 class="project-name">project name</h3>
+
+                <div class="left-side-options">
+                    <ul>
+                        <li>option 1</li>
+                        <li>option 2</li>
+                        <li>option 3</li>
+                        <li>option 4</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="cesium-viewport">
+                <div id="cesiumContainer">
+                    <script>
+                        // Your access token can be found at: https://cesium.com/ion/tokens.
+                        // This is the default access token from your ion account
+
+                        Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlZGU2MDIwZi0wYTk0LTRlMmUtOTUwMC03MzA4Zjg5MjM2ODQiLCJpZCI6NDM5ODIsImlhdCI6MTY0MzkxNzIwNn0.tzpBRREJq75oRR0TCKDKHuZQGMtPgF0Jx8kbjZ_hw5U';
+
+                        // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
+                        const viewer = new Cesium.Viewer('cesiumContainer', {
+                        terrainProvider: Cesium.createWorldTerrain()
+                        });    
+                        // Add Cesium OSM Buildings, a global 3D buildings layer.
+                        const buildingTileset = viewer.scene.primitives.add(Cesium.createOsmBuildings());   
+                        // Fly the camera to San Francisco at the given longitude, latitude, and height.
+                        viewer.camera.flyTo({
+                        destination : Cesium.Cartesian3.fromDegrees(-122.4175, 37.655, 400),
+                        orientation : {
+                            heading : Cesium.Math.toRadians(0.0),
+                            pitch : Cesium.Math.toRadians(-15.0),
+                        }
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- 
+    Create the main page only for the general display of data. 
+    Refer to the Adobe XD
+
+ -->
+
+</body>
+</html>

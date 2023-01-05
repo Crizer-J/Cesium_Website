@@ -1,0 +1,152 @@
+html, body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    
+    width: auto;
+    height: auto;
+}
+
+
+.logo-img {
+    /* outline: 5px solid red; */
+}
+
+.menu, .menu-items, .credit-to-josh h3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    /* outline: 2px dotted rgb(0, 255, 8); */
+    background-color: rgb(178, 178, 178);
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+    .work-please {
+        display: flex;
+        
+    }
+
+    .menu-items {
+        /* outline: 2px solid blue; */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    .menu-items li {
+        border: 2px solid rgb(120, 120, 120);
+        filter: drop-shadow(0.25em 0.2em 0.1em rgb(97, 97, 97));
+        background-color: white;
+        border-radius: 0.5em;
+        padding: 5px 20px;
+        margin: 0px 5px;
+    }
+
+    .credit-to-josh h3 {
+        border: 2px solid rgb(120, 120, 120);
+        border-radius: 1em;
+        background-color: white;
+        padding: 5px 20px;
+        margin: 0px 10px;
+        list-style: none;
+        white-space: nowrap;
+
+    }
+
+    .logo-img {
+        border: 2px solid red;
+        
+    }
+
+    .logo-img img {
+        border: 2px dotted blue;
+        max-width: auto;
+        max-height: 2em;
+        
+    }
+
+ /* ---------------------------------------------------  */
+
+.main-area {
+    outline: 2px solid pink;
+    display: flex;
+}
+
+.left-side-menu {
+    border: 2px dotted blue;
+    background-color: rgb(219, 219, 219);
+    min-width: 150px;
+}
+
+    .left-side-menu-title {
+
+    }
+
+    .layer-list {
+
+    }
+
+    .check-boxes {
+
+    }
+
+.main-viewport {
+    border: 2px dotted red;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    position: relative;
+    z-index: 0.1;
+}
+   
+    .main-viewport-menu-container {
+        /* background-color: red; */
+        position: absolute;
+        z-index: 1;
+        display: flex;
+    }
+
+    .left-side-options li, .right-side-options li {
+        list-style: none;
+        display: inline-flex;
+        border: 2px solid gray;
+        background-color: rgba(198, 197, 197, 0.47);
+        border-radius: 5px;
+        padding: 0.25em 0.5em;
+
+    }
+
+    .left-side-options, .right-side-options {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .project-name {
+        color: white;
+        border: 2px solid gray;
+        border-radius: 5px;
+        padding: ;
+        position: relative;
+        left: 10px;
+        
+    }
+
+    .project-name h3 {
+        border: 2px solid blue;
+        margin: 0;
+        position: center;
+        
+    }
+  
+
+
+
